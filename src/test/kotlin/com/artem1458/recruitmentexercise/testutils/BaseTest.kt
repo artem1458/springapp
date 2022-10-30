@@ -12,6 +12,7 @@ abstract class BaseTest {
       if (count < 0)
         throw IndexOutOfBoundsException("Count should not be less than 0")
       else (0 until count).map { nextObject(T::class.java) }
+
     fun EasyRandom.nextString() = "string_${nextDouble()}"
   }
 }

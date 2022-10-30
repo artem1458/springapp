@@ -14,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableAsync
 class SpringConfiguration {
 
   @Bean
-  fun politicalStatisticsDownloader(csvMapper: CsvMapper  ): IAsyncDownloader<List<PoliticalStatistics>> =
+  fun politicalStatisticsDownloader(csvMapper: CsvMapper): IAsyncDownloader<List<PoliticalStatistics>> =
     PoliticalStatisticsAsyncDownloader(csvMapper)
 
   @Bean
